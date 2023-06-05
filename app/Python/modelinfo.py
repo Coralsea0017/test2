@@ -6,8 +6,8 @@ import tensorflow as tf
 image_path = "storage/app/iamges/image.jpg"
 image = cv2.imread(image_path)
 
-# Resize the image to 256x256
-image = cv2.resize(image, (256, 256))
+# Resize the image to 224x224
+image = cv2.resize(image, (224, 224))
 
 # Normalize the image
 image = image.astype('float32') / 255.0
